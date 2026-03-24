@@ -10,39 +10,26 @@
   <div class="layout">
     <aside class="sidebar">
       <div class="sidebar-title">
-        <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+        <a href="{{ .Site.Home.RelPermalink }}">{{ .Site.Title }}</a>
       </div>
       <nav>
         <ul>
-          <li>
-            <a href="{{ .Site.Home.RelPermalink }}">Kezdőlap</a>
-          </li>
-          <li>
-            TESZT MENÜ
-          </li>
-          <li>
-            Sections száma: {{ len .Site.Sections }}
-          </li>
+          <li><a href="{{ .Site.Home.RelPermalink }}">Kezdőlap</a></li>
+          <li>TESZT MENÜ</li>
+          <li>Sections száma: {{ len .Site.Sections }}</li>
           {{ range .Site.Sections }}
-          <li>
-            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-
-          {{ if .Pages }}
-        <ul>
-        {{ range .Pages }}
-          <li>
-            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-          </li>
-        {{ end }}
-      </ul>
-    {{ end }}
-
-  </li>
-{{ end }}
-      </ul>
-          
+            <li>
+              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+              {{ if .Pages }}
+                <ul>
+                  {{ range .Pages }}
+                    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+                  {{ end }}
+                </ul>
+              {{ end }}
+            </li>
           {{ end }}
-      </ul>
+        </ul>
       </nav>
     </aside>
     <main class="main">
