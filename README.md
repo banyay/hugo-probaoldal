@@ -1,6 +1,6 @@
 # Hugo próbaoldal
 
-Ez egy minimális gyakorlóprojekt.
+Ez egy minimális gyakorlóprojekt. Teszt.
 
 ## Mappák
 
