@@ -1,0 +1,7 @@
+baseURL = "https://example.org/"
+languageCode = "hu"
+title = "Próbaoldal"
+theme = ""
+
+[params]
+  description = "Egyszerű próbaoldal Hugo gyakorláshoz."
