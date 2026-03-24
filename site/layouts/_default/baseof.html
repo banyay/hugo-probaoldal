@@ -10,11 +10,11 @@
   <div class="layout">
     <aside class="sidebar">
       <div class="sidebar-title">
-        <a href="{{ "/" | relURL }}">{{ .Site.Title }}</a>
+        <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
       </div>
       <nav>
         <ul>
-          <li><a href="{{ "/" | relURL }}">Kezdőlap</a></li>
+          <li><a href="{{ .Site.BaseURL }}">Kezdőlap</a></li>
         </ul>
       </nav>
     </aside>
