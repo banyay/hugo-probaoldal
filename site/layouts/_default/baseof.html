@@ -3,32 +3,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ if .Title }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
+  <title>{{ .Site.Title }}</title>
   <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
 </head>
 <body>
   <div class="layout">
-
     <aside class="sidebar">
       <div class="sidebar-title">
         <a href="{{ "/" | relURL }}">{{ .Site.Title }}</a>
       </div>
-
       <nav>
         <ul>
-          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-            <li>
-              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-            </li>
-          {{ end }}
+          <li><a href="{{ "/" | relURL }}">Kezdőlap</a></li>
         </ul>
       </nav>
     </aside>
-
     <main class="main">
       {{ block "main" . }}{{ end }}
     </main>
-
   </div>
 </body>
 </html>
