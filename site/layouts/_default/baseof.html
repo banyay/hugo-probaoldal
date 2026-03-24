@@ -16,7 +16,7 @@
 
       <nav>
         <ul>
-          {{ range .Site.Sections }}
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
             <li>
               <a href="{{ .RelPermalink }}">{{ .Title }}</a>
             </li>
