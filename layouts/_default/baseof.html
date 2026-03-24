@@ -1,1 +1,26 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ if .Title }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="sidebar-title"><a href="/">Bhaktipédia próba</a></div>
+      <nav>
+        <ul>
+          <li><a href="/">Kezdőlap</a></li>
+          <li><a href="/szerzo1/">Szerző 1</a></li>
+        </ul>
+      </nav>
+    </aside>
 
+    <main class="main">
+      {{ block "main" . }}{{ end }}
+    </main>
+  </div>
+</body>
+</html>
