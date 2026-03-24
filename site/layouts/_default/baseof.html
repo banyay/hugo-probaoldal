@@ -14,11 +14,33 @@
       </div>
       <nav>
         <ul>
-          <li><a href="{{ .Site.Home.RelPermalink }}">Kezdőlap</a></li>
-          <li>TESZT MENÜ</li>
-          <li>Sections száma: {{ len .Site.Sections }}</li>
+          <li>
+            <a href="{{ .Site.Home.RelPermalink }}">Kezdőlap</a>
+          </li>
+          <li>
+            TESZT MENÜ
+          </li>
+          <li>
+            Sections száma: {{ len .Site.Sections }}
+          </li>
           {{ range .Site.Sections }}
-          <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+          <li>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+
+          {{ if .Pages }}
+        <ul>
+        {{ range .Pages }}
+          <li>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          </li>
+        {{ end }}
+      </ul>
+    {{ end }}
+
+  </li>
+{{ end }}
+      </ul>
+          
           {{ end }}
       </ul>
       </nav>
