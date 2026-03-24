@@ -2,6 +2,7 @@ baseURL = "https://example.org/"
 languageCode = "hu"
 title = "Próbaoldal"
 
+contentDir = "../content"
 
 [params]
   description = "Egyszerű próbaoldal Hugo gyakorláshoz."
