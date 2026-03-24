@@ -1,5 +1,5 @@
 ---
-title: "szerzők"
+title: "Tartalom"
 ---
 
-Ez a szerzők gyűjtőlapja.
+Ez a tartalom nyitólapja.
