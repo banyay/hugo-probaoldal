@@ -1,5 +1,5 @@
 ---
-title: "Kezdőlap"
+title: "szerzők"
 ---
 
-Ez a Bhaktipédia kezdőlapja.
+Ez a szerzők gyűjtőlapja.
