@@ -14,8 +14,11 @@
       </div>
       <nav>
         <ul>
-          <li><a href="{{ .Site.BaseURL }}">Kezdőlap</a></li>
-        </ul>
+          <li><a href="{{ .Site.Home.RelPermalink }}">Kezdőlap</a></li>
+          {{ range .Site.Sections }}
+          <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+          {{ end }}
+      </ul>
       </nav>
     </aside>
     <main class="main">
