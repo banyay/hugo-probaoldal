@@ -8,12 +8,19 @@
 </head>
 <body>
   <div class="layout">
+
     <aside class="sidebar">
-      <div class="sidebar-title"><a href="/">Bhaktipédia próba</a></div>
+      <div class="sidebar-title">
+        <a href="/">{{ .Site.Title }}</a>
+      </div>
+
       <nav>
         <ul>
-          <li><a href="/">Kezdőlap</a></li>
-          <li><a href="/szerzo1/">Szerző 1</a></li>
+          {{ range .Site.Sections }}
+            <li>
+              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </li>
+          {{ end }}
         </ul>
       </nav>
     </aside>
@@ -21,6 +28,7 @@
     <main class="main">
       {{ block "main" . }}{{ end }}
     </main>
+
   </div>
 </body>
 </html>
