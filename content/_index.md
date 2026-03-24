@@ -2,15 +2,10 @@
 title: "Kezdőlap"
 ---
 
-# Ez egy próbaoldal
+# Ez a címlap
 
-Ez egy nagyon egyszerű Hugo-oldal, hogy lásd a működési logikát.
+Ez egy próbaoldal, három szerzővel.
 
-## Mit érdemes kipróbálni?
-
-- módosítsd ezt a fájlt: `content/_index.md`
-- nyisd meg a `content/rolunk.md` oldalt
-- nézd meg a sablont: `layouts/_default/single.html`
-- nézd meg a stílust: `static/css/style.css`
-
-> A lényeg: a **content** mappában van a tartalom, a **layouts** mappában a megjelenítés.
+- [Szerző 1](/szerzo1/)
+- [Szerző 2](/szerzo2/)
+- [Szerző 3](/szerzo3/)
