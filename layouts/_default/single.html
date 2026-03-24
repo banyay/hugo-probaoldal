@@ -1,31 +1,8 @@
-<!DOCTYPE html>
-<html lang="hu">
-<head>
-  <meta charset="utf-8">
-  <title>{{ .Title }} | {{ .Site.Title }}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
-  <header class="site-header">
-    <div class="wrap">
-      <div class="site-title"><a href="/">{{ .Site.Title }}</a></div>
-      <nav class="menu">
-        <a href="/">Kezdőlap</a>
-        <a href="/rolunk/">Rólunk</a>
-      </nav>
-    </div>
-  </header>
-
-  <main class="wrap content">
-    <article>
-      <h1>{{ .Title }}</h1>
+{{ define "main" }}
+  <article>
+    <h1>{{ .Title }}</h1>
+    <div>
       {{ .Content }}
-    </article>
-  </main>
-
-  <footer class="site-footer">
-    <div class="wrap">Próba Hugo-oldal GitHub-gyakorláshoz</div>
-  </footer>
-</body>
-</html>
+    </div>
+  </article>
+{{ end }}
